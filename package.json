@@ -1,0 +1,45 @@
+{
+  "name": "QB-Component",
+  "version": "1.0.0",
+  "description": "xpc component that connects to QB desktop",
+  "engines": {
+    "node": "8.1.0"
+  },
+  "scripts": {
+    "pretest": "eslint lib spec mocha spec-integration --fix",
+    "test": "mocha spec spec-integration"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "ANKIT SINGH",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "bluebird": "^3.5.3",
+    "check-types": "^7.4.0",
+    "crc": "3.2.1",
+    "elasticio-node": "^0.0.9",
+    "elasticio-sailor-nodejs": "^2.3.0",
+    "html-entities": "^1.2.1",
+    "mongodb": "3.1.10",
+    "node-uuid": "^1.4.8",
+    "object-assign": "^4.1.1",
+    "request": "^2.81.0",
+    "underscore": "^1.8.3",
+    "xml2json": "^0.11.2",
+    "xmlbuilder": "10.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "dotenv": "^4.0.0",
+    "eslint": "^3.1.1",
+    "eslint-plugin-mocha": "^4.8.0",
+    "mocha": "^5.2.0",
+    "nock": "^10.0.2"
+  }
+}

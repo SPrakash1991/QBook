@@ -1,0 +1,72 @@
+{
+  "title": "Quick Book",
+
+  "description": "Quickbook Component",
+  "docsUrl": "",
+  "credentials": {
+    "fields": {
+      "hostname": {
+        "label": "Host Name",
+        "required": true,
+        "viewClass": "TextFieldWithNoteView"
+      },
+      "port": {
+        "label": "Port",
+        "required": true,
+        "viewClass": "PasswordFieldView"
+      },
+      "username": {
+        "label": "User Name",
+        "required": true,
+        "viewClass": "TextFieldWithNoteView"
+      },
+      "password": {
+        "label": "Password",
+        "required": true,
+        "viewClass": "PasswordFieldView"
+      },
+      "database": {
+        "label": "Database Name",
+        "required": true,
+        "viewClass": "TextFieldWithNoteView"
+      },
+      "tableName": {
+        "label": "Table Name",
+        "required": true,
+        "viewClass": "TextFieldWithNoteView"
+      }
+    }
+  },
+  "actions": {
+    "soapservice": {
+      "title": "Quick Book Soap Service",
+      "main": "./lib/actions/Soap.js",
+      "description": "Quick Book Soap Service",
+      "fields": {},
+      "metadata": {
+        "in": {},
+        "out": {}
+      }
+    }
+  },
+  "triggers": {
+    "getObjectsPolling": {
+      "main": "./lib/triggers/getAllVendor.js",
+      "type": "polling",
+      "title": "Fetch new and updated Vendors",
+      "description": "Get QB Vendors which have recently been modified or created",
+      "fields": {
+        "qbml": {
+          "label": "QBML",
+          "viewClass": "TextAreaView",
+          "prompt": "QBML",
+          "note": "QBML"
+        }
+
+      },
+      "metadata": {
+        "out": {}
+      }
+    }
+  }
+}
